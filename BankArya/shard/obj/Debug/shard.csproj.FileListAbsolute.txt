@@ -1,0 +1,34 @@
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\shard\bin\Debug\shard.dll.config
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\shard\bin\Debug\shard.dll
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\shard\bin\Debug\shard.pdb
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\shard\obj\Debug\ResolveAssemblyReference.cache
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\shard\obj\Debug\shard.dll
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\shard\obj\Debug\shard.pdb
+E:\term6\BankArya\shard\obj\Debug\ResolveAssemblyReference.cache
+E:\term6\BankArya\shard\obj\Debug\shard.dll
+D:\aze\BankArya\shard\obj\Debug\ResolveAssemblyReference.cache
+D:\aze\BankArya\shard\obj\Debug\shard.dll
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\shard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\shard\obj\Debug\shard.dll
+C:\Users\adz\Downloads\Arya\BankArya\shard\bin\Debug\shard.dll.config
+C:\Users\adz\Downloads\Arya\BankArya\shard\bin\Debug\shard.dll
+C:\Users\adz\Downloads\Arya\BankArya\shard\bin\Debug\shard.pdb
+C:\Users\adz\Downloads\Arya\BankArya\shard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\adz\Downloads\Arya\BankArya\shard\obj\Debug\shard.dll
+C:\Users\adz\Downloads\Arya\BankArya\shard\obj\Debug\shard.pdb
+D:\project\Data base\Arya\BankArya\shard\bin\Debug\shard.dll.config
+D:\project\Data base\Arya\BankArya\shard\bin\Debug\shard.dll
+D:\project\Data base\Arya\BankArya\shard\bin\Debug\shard.pdb
+D:\project\Data base\Arya\BankArya\shard\obj\Debug\shard.dll
+D:\project\Data base\Arya\BankArya\shard\obj\Debug\shard.pdb
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\shard\bin\Debug\shard.dll.config
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\shard\bin\Debug\shard.dll
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\shard\bin\Debug\shard.pdb
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\shard\obj\Debug\ResolveAssemblyReference.cache
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\shard\obj\Debug\shard.dll
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\shard\obj\Debug\shard.pdb
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\shard\bin\Debug\shard.dll.config
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\shard\bin\Debug\shard.dll
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\shard\bin\Debug\shard.pdb
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\shard\obj\Debug\shard.dll
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\shard\obj\Debug\shard.pdb

@@ -1,0 +1,94 @@
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\bin\Debug\UserL.exe
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\bin\Debug\UserL.pdb
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\bin\Debug\shard.dll
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\bin\Debug\shard.pdb
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\UserL.exe
+c:\users\pars\documents\visual studio 2010\Projects\BankArya\UserL\obj\x86\Debug\UserL.pdb
+E:\term6\BankArya\UserL\obj\x86\Debug\UserL.exe
+E:\term6\BankArya\UserL\obj\x86\Debug\UserL.pdb
+E:\term6\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\term6\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+E:\term6\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+E:\term6\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+E:\term6\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\term6\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\aze\BankArya\UserL\obj\x86\Debug\UserL.exe
+D:\aze\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\aze\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+D:\aze\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+D:\aze\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+D:\aze\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\aze\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\UserL.exe
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\pars\Documents\Visual Studio 2010\Projects\BankArya\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\UserL.exe
+C:\Users\adz\Downloads\Arya\BankArya\UserL\bin\Debug\UserL.exe
+C:\Users\adz\Downloads\Arya\BankArya\UserL\bin\Debug\UserL.pdb
+C:\Users\adz\Downloads\Arya\BankArya\UserL\bin\Debug\shard.dll
+C:\Users\adz\Downloads\Arya\BankArya\UserL\bin\Debug\shard.pdb
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\adz\Downloads\Arya\BankArya\UserL\obj\x86\Debug\UserL.pdb
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.exe
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.pdb
+D:\project\Data base\Arya\BankArya\UserL\bin\Debug\UserL.exe
+D:\project\Data base\Arya\BankArya\UserL\bin\Debug\UserL.pdb
+D:\project\Data base\Arya\BankArya\UserL\bin\Debug\shard.dll
+D:\project\Data base\Arya\BankArya\UserL\bin\Debug\shard.pdb
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.csprojResolveAssemblyReference.cache
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+D:\project\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.csproj.GenerateResource.Cache
+H:\دانشگاه\پایگاه داده\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.exe
+H:\دانشگاه\پایگاه داده\Data base\Arya\BankArya\UserL\obj\x86\Debug\UserL.pdb
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.exe
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.pdb
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\bin\Debug\UserL.exe
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\bin\Debug\UserL.pdb
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\bin\Debug\shard.dll
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\bin\Debug\shard.pdb
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\new html 5 94\new down project 1\Bank\Arya\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.exe
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.pdb
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\UserL.exe
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\UserL.pdb
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\shard.dll
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\shard.pdb
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\zhila\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.exe
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.pdb
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\UserL.exe
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\UserL.pdb
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\shard.dll
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\bin\Debug\shard.pdb
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.csprojResolveAssemblyReference.cache
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmEnter.resources
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.FrmUser.resources
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.Properties.Resources.resources
+C:\Users\pdes\Desktop\Bank\Arya\BankArya\UserL\obj\x86\Debug\UserL.csproj.GenerateResource.Cache

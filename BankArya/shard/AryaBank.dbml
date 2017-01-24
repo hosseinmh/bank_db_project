@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Bank" Class="AryaBankDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=Bank;Integrated Security=True" SettingsObjectName="shard.Properties.Settings" SettingsPropertyName="BankConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AccountCurrent" Member="AccountCurrents">
+    <Type Name="AccountCurrent">
+      <Column Name="IDAccountCurrent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="currentCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReagentName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ReagentFamily" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ReagentIDAccount" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReagentEndorsement" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IDcustomer" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="amount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="AccountCurrent_cheque" Member="cheques" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="cheque" />
+      <Association Name="AccountCurrent_Close" Member="Closes" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="Close" />
+      <Association Name="AccountCurrent_MoveCurrentToSaving" Member="MoveCurrentToSavings" ThisKey="IDAccountCurrent" OtherKey="IDCurrent" Type="MoveCurrentToSaving" />
+      <Association Name="AccountCurrent_MoveSavingtoCurrent" Member="MoveSavingtoCurrents" ThisKey="IDAccountCurrent" OtherKey="IDCurrent" Type="MoveSavingtoCurrent" />
+      <Association Name="AccountCurrent_MoveShortTimeToCurrent" Member="MoveShortTimeToCurrents" ThisKey="IDAccountCurrent" OtherKey="IDCurrent" Type="MoveShortTimeToCurrent" />
+      <Association Name="AccountCurrent_RequestCheque" Member="RequestCheques" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="RequestCheque" />
+      <Association Name="AccountCurrent_totalCurrent" Member="totalCurrents" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="totalCurrent" />
+      <Association Name="AccountCurrent_BackCheque" Member="BackCheques" ThisKey="IDAccountCurrent" OtherKey="IDcurrent" Type="BackCheque" />
+      <Association Name="Customer_AccountCurrent" Member="Customer" ThisKey="IDcustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.totalSaving" Member="totalSavings">
+    <Type Name="totalSaving">
+      <Column Name="IDTotal" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IDAccountSaving" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="AccountSaving_totalSaving" Member="AccountSaving" ThisKey="IDAccountSaving" OtherKey="IDAccountSaving" Type="AccountSaving" IsForeignKey="true" />
+      <Association Name="Customer_totalSaving" Member="Customer" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountLongTime" Member="AccountLongTimes">
+    <Type Name="AccountLongTime">
+      <Column Name="IDAcountLongTime" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LongTimeCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Grist" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GuarantiTime" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="amount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="AccountLongTime_Close" Member="Closes" ThisKey="IDAcountLongTime" OtherKey="IDAccountLongtime" Type="Close" />
+      <Association Name="Customer_AccountLongTime" Member="Customer" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountSaving" Member="AccountSavings">
+    <Type Name="AccountSaving">
+      <Column Name="IDAccountSaving" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="savingCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IDcustomer" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="amount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="AccountSaving_totalSaving" Member="totalSavings" ThisKey="IDAccountSaving" OtherKey="IDAccountSaving" Type="totalSaving" />
+      <Association Name="AccountSaving_Close" Member="Closes" ThisKey="IDAccountSaving" OtherKey="IDAccountSaving" Type="Close" />
+      <Association Name="AccountSaving_MoveCurrentToSaving" Member="MoveCurrentToSavings" ThisKey="IDAccountSaving" OtherKey="IDSaving" Type="MoveCurrentToSaving" />
+      <Association Name="AccountSaving_MoveSavingtoCurrent" Member="MoveSavingtoCurrents" ThisKey="IDAccountSaving" OtherKey="IDSaving" Type="MoveSavingtoCurrent" />
+      <Association Name="AccountSaving_MoveSavingToShortTime" Member="MoveSavingToShortTimes" ThisKey="IDAccountSaving" OtherKey="IDSaving" Type="MoveSavingToShortTime" />
+      <Association Name="Customer_AccountSaving" Member="Customer" ThisKey="IDcustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountShortTime" Member="AccountShortTimes">
+    <Type Name="AccountShortTime">
+      <Column Name="IDAccountShortTime" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GuarantiiTime" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Grist" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ShortTimeCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDcustomer" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="amount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="AccountShortTime_Close" Member="Closes" ThisKey="IDAccountShortTime" OtherKey="IDAccountShorttime" Type="Close" />
+      <Association Name="AccountShortTime_MoveSavingToShortTime" Member="MoveSavingToShortTimes" ThisKey="IDAccountShortTime" OtherKey="IDShortTime" Type="MoveSavingToShortTime" />
+      <Association Name="AccountShortTime_MoveShortTimeToCurrent" Member="MoveShortTimeToCurrents" ThisKey="IDAccountShortTime" OtherKey="IDShortTime" Type="MoveShortTimeToCurrent" />
+      <Association Name="Customer_AccountShortTime" Member="Customer" ThisKey="IDcustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cheque" Member="cheques">
+    <Type Name="cheque">
+      <Column Name="IDcheque" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="payment" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="cheque#" Member="cheque_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="cropper_name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="IDAccountCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Cheque_date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="cropper_Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="cheque_BackCheque" Member="BackCheques" ThisKey="IDcheque" OtherKey="IDcheque" Type="BackCheque" />
+      <Association Name="AccountCurrent_cheque" Member="AccountCurrent" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Close]" Member="Closes">
+    <Type Name="Close">
+      <Column Name="IDClose" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDAccountCurrent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAccountSaving" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAccountLongtime" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAccountShorttime" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_Close" Member="AccountCurrent" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="AccountLongTime_Close" Member="AccountLongTime" ThisKey="IDAccountLongtime" OtherKey="IDAcountLongTime" Type="AccountLongTime" IsForeignKey="true" />
+      <Association Name="AccountSaving_Close" Member="AccountSaving" ThisKey="IDAccountSaving" OtherKey="IDAccountSaving" Type="AccountSaving" IsForeignKey="true" />
+      <Association Name="AccountShortTime_Close" Member="AccountShortTime" ThisKey="IDAccountShorttime" OtherKey="IDAccountShortTime" Type="AccountShortTime" IsForeignKey="true" />
+      <Association Name="Customer_Close" Member="Customer" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="NationalCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Family" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="FatherName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BirthDay" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Emissionlocation" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AddHome" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AddWork" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="identifyrecognition" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="endorsement" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CustomerPass" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MobileNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TellHome" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TellWork" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Customer_AccountCurrent" Member="AccountCurrents" ThisKey="IDCustomer" OtherKey="IDcustomer" Type="AccountCurrent" />
+      <Association Name="Customer_totalSaving" Member="totalSavings" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="totalSaving" />
+      <Association Name="Customer_AccountLongTime" Member="AccountLongTimes" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="AccountLongTime" />
+      <Association Name="Customer_AccountSaving" Member="AccountSavings" ThisKey="IDCustomer" OtherKey="IDcustomer" Type="AccountSaving" />
+      <Association Name="Customer_AccountShortTime" Member="AccountShortTimes" ThisKey="IDCustomer" OtherKey="IDcustomer" Type="AccountShortTime" />
+      <Association Name="Customer_Close" Member="Closes" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="Close" />
+      <Association Name="Customer_RequestCheque" Member="RequestCheques" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="RequestCheque" />
+      <Association Name="Customer_totalCurrent" Member="totalCurrents" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="totalCurrent" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employ" Member="Employs">
+    <Type Name="Employ">
+      <Column Name="IDEmploy" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="lastname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="personalcode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="position" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="EmployPass" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MoveCurrentToSaving" Member="MoveCurrentToSavings">
+    <Type Name="MoveCurrentToSaving">
+      <Column Name="IDMoveCurrentToSaving" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDSaving" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AmountMove" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DateMove" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_MoveCurrentToSaving" Member="AccountCurrent" ThisKey="IDCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="AccountSaving_MoveCurrentToSaving" Member="AccountSaving" ThisKey="IDSaving" OtherKey="IDAccountSaving" Type="AccountSaving" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MoveSavingtoCurrent" Member="MoveSavingtoCurrents">
+    <Type Name="MoveSavingtoCurrent">
+      <Column Name="IDMoveSavingtoCurrent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDSaving" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AmountMove" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DateMove" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_MoveSavingtoCurrent" Member="AccountCurrent" ThisKey="IDCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="AccountSaving_MoveSavingtoCurrent" Member="AccountSaving" ThisKey="IDSaving" OtherKey="IDAccountSaving" Type="AccountSaving" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MoveSavingToShortTime" Member="MoveSavingToShortTimes">
+    <Type Name="MoveSavingToShortTime">
+      <Column Name="IDMoveShortTimeToSaving" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDSaving" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDShortTime" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AmountMove" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DateMove" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="AccountSaving_MoveSavingToShortTime" Member="AccountSaving" ThisKey="IDSaving" OtherKey="IDAccountSaving" Type="AccountSaving" IsForeignKey="true" />
+      <Association Name="AccountShortTime_MoveSavingToShortTime" Member="AccountShortTime" ThisKey="IDShortTime" OtherKey="IDAccountShortTime" Type="AccountShortTime" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MoveShortTimeToCurrent" Member="MoveShortTimeToCurrents">
+    <Type Name="MoveShortTimeToCurrent">
+      <Column Name="IDMoveShortTimeToCurrent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDShortTime" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AmountMove" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DateMove" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_MoveShortTimeToCurrent" Member="AccountCurrent" ThisKey="IDCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="AccountShortTime_MoveShortTimeToCurrent" Member="AccountShortTime" ThisKey="IDShortTime" OtherKey="IDAccountShortTime" Type="AccountShortTime" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RequestCheque" Member="RequestCheques">
+    <Type Name="RequestCheque">
+      <Column Name="IDRequestCheque" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="answer" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IDAccountCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="oldcheque#" Member="oldcheque_" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_RequestCheque" Member="AccountCurrent" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="Customer_RequestCheque" Member="Customer" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.totalCurrent" Member="totalCurrents">
+    <Type Name="totalCurrent">
+      <Column Name="IDTotalCurrent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IDAccountCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_totalCurrent" Member="AccountCurrent" ThisKey="IDAccountCurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="Customer_totalCurrent" Member="Customer" ThisKey="IDCustomer" OtherKey="IDCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BackCheque" Member="BackCheques">
+    <Type Name="BackCheque">
+      <Column Name="IDBackCheque" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDcheque" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDcurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="AccountCurrent_BackCheque" Member="AccountCurrent" ThisKey="IDcurrent" OtherKey="IDAccountCurrent" Type="AccountCurrent" IsForeignKey="true" />
+      <Association Name="cheque_BackCheque" Member="cheque" ThisKey="IDcheque" OtherKey="IDcheque" Type="cheque" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.p_active_current" Method="p_active_current">
+    <Parameter Name="p" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_Request_cheque" Method="p_Request_cheque">
+    <Parameter Name="idcurrent" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="codecheque" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_active_saving" Method="p_active_saving">
+    <Parameter Name="p" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.p_mojodi_current" Method="p_mojodi_current">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="p_mojodi_currentResult">
+      <Column Name="amount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.p_move2Current" Method="p_move2Current">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="p_move2CurrentResult">
+      <Column Name="Family" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.p_move2Saving" Method="p_move2Saving">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="p_move2SavingResult">
+      <Column Name="Family" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.p_move2ShortTime" Method="p_move2ShortTime">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="p_move2ShortTimeResult">
+      <Column Name="Family" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.p_mojodi_Saving" Method="p_mojodi_Saving">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="p_mojodi_SavingResult">
+      <Column Name="amount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getIdcurrent" Method="getIdcurrent">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="getIdcurrentResult">
+      <Column Name="IDAccountCurrent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getIdshorttime" Method="getIdshorttime">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="getIdshorttimeResult">
+      <Column Name="IDAccountShortTime" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getIdlongtime" Method="getIdlongtime">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="getIdlongtimeResult">
+      <Column Name="IDAcountLongTime" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getIdsaving" Method="getIdsaving">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="getIdsavingResult">
+      <Column Name="IDAccountSaving" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.P_close" Method="P_close">
+    <Parameter Name="closeKind" Type="System.Int32" DbType="Int" />
+    <Parameter Name="codeAccount" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GTIdCustomer" Method="GTIdCustomer">
+    <Parameter Name="p1" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="GTIdCustomerResult">
+      <Column Name="IDCustomer" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

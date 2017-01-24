@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.5, 41.25" name="AryaBank">
+  <DataContextMoniker Name="/AryaBankDataContext" />
+  <nestedChildShapes>
+    <classShape Id="69202a31-cbac-4ef6-9391-224278154348" absoluteBounds="7.5, 20.875, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/AryaBankDataContext/AccountCurrent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="003a0729-448b-4365-b109-a50045db2a71" absoluteBounds="7.5150000000000006, 21.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3eb68c22-e1f2-4d0a-9333-6420e9280b15" absoluteBounds="10.25, 14.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AryaBankDataContext/totalSaving" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1725b60a-ec75-4f43-b2a9-09a3c9c88bc3" absoluteBounds="10.265, 14.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20e1f12b-1f48-4037-aff8-23018e78bc83" absoluteBounds="7.5, 15.25, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AryaBankDataContext/AccountLongTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71ec9d72-ca6f-4b20-b69d-46db44c51e0b" absoluteBounds="7.5150000000000006, 15.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c53f649b-c261-4c69-85bb-4c1138622827" absoluteBounds="7.5, 12.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/AryaBankDataContext/AccountSaving" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0747e501-7e78-4b5a-a28a-a346a9230adb" absoluteBounds="7.5150000000000006, 13.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05d9ed32-2971-450b-b73b-00ef55471d2b" absoluteBounds="7.5, 17.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AryaBankDataContext/AccountShortTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9a39a5d-4e0c-42a6-aae7-fa3ab85a2f39" absoluteBounds="7.5150000000000006, 18.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b98b849-c58c-4a4d-9fbd-0a041b605595" absoluteBounds="10.25, 38.625, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/AryaBankDataContext/cheque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6dee2a7-55a4-408a-ae1c-a6fe6913157d" absoluteBounds="10.265, 39.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75414c8f-6722-47a7-88c8-433cb8dc2144" absoluteBounds="10.25, 11, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/AryaBankDataContext/Close" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c83d2f2-cfd5-4910-b83c-cc60936e1b39" absoluteBounds="10.265, 11.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" absoluteBounds="4.75, 13.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/AryaBankDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b56b800c-3a27-4252-9bb4-a1c1548f78f8" absoluteBounds="4.765, 14.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e76f113-4600-46b6-b272-0d79f9e921e4" absoluteBounds="10.25, 29.875, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AryaBankDataContext/Employ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="677ccd49-e47a-4b8a-8627-8538b1ceed04" absoluteBounds="10.265, 30.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efde9a43-b235-4917-9846-58505d689940" absoluteBounds="13.25, 17.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaBankDataContext/MoveCurrentToSaving" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e94d6bb-97fd-437a-9084-4c3d48416eea" absoluteBounds="13.265, 17.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f3e74d95-7bb3-489a-a376-e84500f0dbdf" absoluteBounds="13.25, 14.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaBankDataContext/MoveSavingtoCurrent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3f77dab-9ca0-4a68-978e-5f1213696418" absoluteBounds="13.265, 14.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be6312b6-e472-4952-84ae-dc37e0e17cf6" absoluteBounds="10.25, 17.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaBankDataContext/MoveSavingToShortTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ace9b04-1c58-4e45-a7b8-3c9b847e7b1b" absoluteBounds="10.265, 17.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21e0a448-eb98-44ba-8fce-41e507a58777" absoluteBounds="13.25, 19.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaBankDataContext/MoveShortTimeToCurrent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05ae119b-ce64-4851-a85b-949049efb966" absoluteBounds="13.265, 20.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b2ed209-829e-4d7d-816a-6c5a6a74fbe1" absoluteBounds="13.25, 22.625, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AryaBankDataContext/RequestCheque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="781e9e05-0efd-49a8-8abc-5948e892fa7c" absoluteBounds="13.265, 23.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ffadcf13-cd10-489f-b7a3-a085c9bf3900" absoluteBounds="10.25, 20.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AryaBankDataContext/totalCurrent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c4e2920-7a70-44ef-a4ee-29345c9069a5" absoluteBounds="10.265, 21.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.5 : 14.4773045038061); (9.65625 : 14.6335545038061); (9.65625 : 13.78125); (9.87857443490112 : 14.0035744349011 : JumpStart); (9.99642556509888 : 14.1214255650989 : JumpEnd); (10.0035744349011 : 14.1285744349011 : JumpStart); (10.2151755650989 : 14.3401755650989 : JumpEnd); (10.25 : 14.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountSaving/AccountSaving_totalSaving" />
+      <nodes>
+        <classShapeMoniker Id="c53f649b-c261-4c69-85bb-4c1138622827" />
+        <classShapeMoniker Id="3eb68c22-e1f2-4d0a-9333-6420e9280b15" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 23.4151025390625); (8.5 : 39.7989005533854); (10.25 : 39.7989005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_cheque" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="8b98b849-c58c-4a4d-9fbd-0a041b605595" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.46769230769231 : 20.875); (9.69107443490112 : 20.6516178727912 : JumpStart); (9.80892556509888 : 20.5337667425934 : JumpEnd); (9.87857443490112 : 20.4641178727912 : JumpStart); (9.99642556509888 : 20.3462667425934 : JumpEnd); (10.0625 : 20.2801923076923); (10.0625 : 11.9815991210937); (10.25 : 11.9815991210937)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_Close" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="75414c8f-6722-47a7-88c8-433cb8dc2144" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 15.3119152522536); (9.9375 : 14.8744152522536); (9.9375 : 12.5036506816406); (9.97916666666667 : 12.5036506816406 : JumpStart); (10.1458333333333 : 12.5036506816406 : JumpEnd); (10.25 : 12.5036506816406)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountLongTime/AccountLongTime_Close" />
+      <nodes>
+        <classShapeMoniker Id="20e1f12b-1f48-4037-aff8-23018e78bc83" />
+        <classShapeMoniker Id="75414c8f-6722-47a7-88c8-433cb8dc2144" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 12.75); (8.5 : 11.4595470605469); (10.25 : 11.4595470605469)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountSaving/AccountSaving_Close" />
+      <nodes>
+        <classShapeMoniker Id="c53f649b-c261-4c69-85bb-4c1138622827" />
+        <classShapeMoniker Id="75414c8f-6722-47a7-88c8-433cb8dc2144" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 17.9057682307692); (9.81607443490112 : 17.5896937958681 : JumpStart); (9.99642556509888 : 17.4093426656704 : JumpEnd); (10.0035744349011 : 17.4021937958681 : JumpStart); (10.1214255650989 : 17.2843426656704 : JumpEnd); (10.15625 : 17.2495182307692); (10.15625 : 12.7646764619141); (10.25 : 12.7646764619141)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountShortTime/AccountShortTime_Close" />
+      <nodes>
+        <classShapeMoniker Id="05d9ed32-2971-450b-b73b-00ef55471d2b" />
+        <classShapeMoniker Id="75414c8f-6722-47a7-88c8-433cb8dc2144" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 17.6362125651042); (5.75 : 22.1450512695313); (7.5 : 22.1450512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_AccountCurrent" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 14.8854484049479); (9.97916666666667 : 14.8854484049479 : JumpStart); (10.2395833333333 : 14.8854484049479 : JumpEnd); (10.25 : 14.8854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_totalSaving" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="3eb68c22-e1f2-4d0a-9333-6420e9280b15" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 16.2315991210938); (7.5 : 16.2315991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_AccountLongTime" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="20e1f12b-1f48-4037-aff8-23018e78bc83" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 14.1354484049479); (7.5 : 14.1354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_AccountSaving" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="c53f649b-c261-4c69-85bb-4c1138622827" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.2812525 : 17.6362125651042); (6.2812525 : 18.9527498372396); (6.46354541666667 : 18.9527498372396 : JumpStart); (6.63021208333333 : 18.9527498372396 : JumpEnd); (7.5 : 18.9527498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_AccountShortTime" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="05d9ed32-2971-450b-b73b-00ef55471d2b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 13.75); (5.75 : 12.2426249013672); (8.41666666666667 : 12.2426249013672 : JumpStart); (8.58333333333333 : 12.2426249013672 : JumpEnd); (9.97916666666667 : 12.2426249013672 : JumpStart); (10.1458333333333 : 12.2426249013672 : JumpEnd); (10.25 : 12.2426249013672)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_Close" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="75414c8f-6722-47a7-88c8-433cb8dc2144" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 21.7066675751703); (9.75 : 21.7066675751703); (9.75 : 19.5); (9.85416666666667 : 19.5 : JumpStart); (10.1458333333333 : 19.5 : JumpEnd); (14.25 : 19.5); (14.25 : 18.8958968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_MoveCurrentToSaving" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="efde9a43-b235-4917-9846-58505d689940" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 14.4909267869591); (9.90625 : 14.8971767869591); (9.90625 : 16.75); (9.97916666666667 : 16.75 : JumpStart); (10.2395833333333 : 16.75 : JumpEnd); (12.875 : 16.75); (13.25 : 17.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountSaving/AccountSaving_MoveCurrentToSaving" />
+      <nodes>
+        <classShapeMoniker Id="c53f649b-c261-4c69-85bb-4c1138622827" />
+        <classShapeMoniker Id="efde9a43-b235-4917-9846-58505d689940" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 20.9703836153846); (9.69107443490112 : 20.7793091804835 : JumpStart); (9.80892556509888 : 20.6614580502857 : JumpEnd); (9.9375 : 20.5328836153846); (9.9375 : 16.2708968098958); (9.97916666666667 : 16.2708968098958 : JumpStart); (10.2395833333333 : 16.2708968098958 : JumpEnd); (12.875 : 16.2708968098958); (13.25 : 15.8958968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_MoveSavingtoCurrent" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="f3e74d95-7bb3-489a-a376-e84500f0dbdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 14.21875); (9.57291666666667 : 14.21875 : JumpStart); (9.73958333333333 : 14.21875 : JumpEnd); (9.85416666666667 : 14.21875 : JumpStart); (10.2395833333333 : 14.21875 : JumpEnd); (13.25 : 14.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountSaving/AccountSaving_MoveSavingtoCurrent" />
+      <nodes>
+        <classShapeMoniker Id="c53f649b-c261-4c69-85bb-4c1138622827" />
+        <classShapeMoniker Id="f3e74d95-7bb3-489a-a376-e84500f0dbdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.45640869391026 : 14.5208968098958); (9.875 : 14.9394881159856); (9.875 : 18.3854484049479); (9.97916666666667 : 18.3854484049479 : JumpStart); (10.1458333333333 : 18.3854484049479 : JumpEnd); (10.25 : 18.3854484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountSaving/AccountSaving_MoveSavingToShortTime" />
+      <nodes>
+        <classShapeMoniker Id="c53f649b-c261-4c69-85bb-4c1138622827" />
+        <classShapeMoniker Id="be6312b6-e472-4952-84ae-dc37e0e17cf6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 18.8906726074219); (9.85416666666667 : 18.8906726074219 : JumpStart); (10.1458333333333 : 18.8906726074219 : JumpEnd); (10.25 : 18.8906726074219)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountShortTime/AccountShortTime_MoveSavingToShortTime" />
+      <nodes>
+        <classShapeMoniker Id="05d9ed32-2971-450b-b73b-00ef55471d2b" />
+        <classShapeMoniker Id="be6312b6-e472-4952-84ae-dc37e0e17cf6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.45259415384615 : 20.875); (8.45259415384615 : 20.5); (9.66666666666667 : 20.5 : JumpStart); (9.92602564102564 : 20.5 : JumpEnd); (12.5416666666667 : 20.5 : JumpStart); (12.7083333333333 : 20.5 : JumpEnd); (12.875 : 20.5); (12.875 : 20.6354484049479); (13.25 : 20.6354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_MoveShortTimeToCurrent" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="21e0a448-eb98-44ba-8fce-41e507a58777" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.97629657692308 : 20.0304996744792); (8.97629657692308 : 20.375); (9.66666666666667 : 20.375 : JumpStart); (9.83333333333333 : 20.375 : JumpEnd); (9.85416666666667 : 20.375 : JumpStart); (10.0510256410256 : 20.375 : JumpEnd); (12.625 : 20.375); (12.625 : 21.1094246074219); (13.25 : 21.1094246074219)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountShortTime/AccountShortTime_MoveShortTimeToCurrent" />
+      <nodes>
+        <classShapeMoniker Id="05d9ed32-2971-450b-b73b-00ef55471d2b" />
+        <classShapeMoniker Id="21e0a448-eb98-44ba-8fce-41e507a58777" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 23.0200512695313); (13.25 : 23.0200512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_RequestCheque" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="2b2ed209-829e-4d7d-816a-6c5a6a74fbe1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.2187475 : 17.6362125651042); (5.2187475 : 24.032900390625); (8.41666666666667 : 24.032900390625 : JumpStart); (8.58333333333333 : 24.032900390625 : JumpEnd); (12.7916666666667 : 24.032900390625 : JumpStart); (12.9583333333333 : 24.032900390625 : JumpEnd); (13.25 : 24.032900390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_RequestCheque" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="2b2ed209-829e-4d7d-816a-6c5a6a74fbe1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 21.3072780952774); (9.66666666666667 : 21.3072780952774 : JumpStart); (9.83333333333333 : 21.3072780952774 : JumpEnd); (10.25 : 21.3072780952774)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_totalCurrent" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="ffadcf13-cd10-489f-b7a3-a085c9bf3900" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.54687875 : 17.6362125651042); (6.54687875 : 20.78125); (8.36926082051282 : 20.78125 : JumpStart); (8.53592748717949 : 20.78125 : JumpEnd); (9.47810897435898 : 20.78125 : JumpStart); (9.83333333333333 : 20.78125 : JumpEnd); (10.25 : 20.78125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/Customer/Customer_totalCurrent" />
+      <nodes>
+        <classShapeMoniker Id="1668020f-57b9-4f36-bec1-9839dc3b1d24" />
+        <classShapeMoniker Id="ffadcf13-cd10-489f-b7a3-a085c9bf3900" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cdb81d2b-872c-4dde-8e9f-0bb5d40690a8" absoluteBounds="13.25, 30, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AryaBankDataContext/BackCheque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39867769-310a-4737-bfdb-4bfb5a2eaefd" absoluteBounds="13.265, 30.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.5 : 23.413563077524); (9.87653946153846 : 23.7901025390625); (12.875 : 23.7901025390625); (12.875 : 29.625); (13.25 : 30)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaBankDataContext/AccountCurrent/AccountCurrent_BackCheque" />
+      <nodes>
+        <classShapeMoniker Id="69202a31-cbac-4ef6-9391-224278154348" />
+        <classShapeMoniker Id="cdb81d2b-872c-4dde-8e9f-0bb5d40690a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.25 : 39.7989005533854); (14.25 : 39.7989005533854); (14.25 : 31.3862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AryaBankDataContext/cheque/cheque_BackCheque" />
+      <nodes>
+        <classShapeMoniker Id="8b98b849-c58c-4a4d-9fbd-0a041b605595" />
+        <classShapeMoniker Id="cdb81d2b-872c-4dde-8e9f-0bb5d40690a8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
